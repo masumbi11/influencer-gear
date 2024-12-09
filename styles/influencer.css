@@ -2,13 +2,11 @@
 :root{
     --black:#3A3A3A;
     --btn:#fff;
+    --Text-Gray:#18191F;
+    --Dark-Color:rgba(0, 0, 0, 0.87);
 }
 body{
-    font-family: "Work Sans";
-    font-optical-sizing: auto;
-}
-.font-famely-Inter{
-    font-family: "Work Sans", serif;
+    font-family: "Poppins";
     font-optical-sizing: auto;
 }
 /* nav bar styles */
@@ -69,4 +67,73 @@ header{
     display: flex;
     justify-content: space-around;
 }
-     
+     /*Popular Collection styles  */
+.Popular-Collection{
+    margin: 20px 120px;
+}
+.Popular-Collection-hedline{
+    color: var(--black);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.Popular-prodact{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.Popular-prodact-cotainar{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.Popular-prodact-cotainar >div{
+    padding:17px 15px 0 14px;
+}
+.Popular-prodact-cotainar h3{
+    color: var(--Text-Gray);
+    font-size: 28px;
+    font-weight: 500;
+    margin:16px 0 6px 0 ;
+}
+.Popular-prodact-cotainar h4{
+    color: var(--Dark-Color);
+    font-size: 24px;
+    margin: 0;
+}
+.Popular-prodact-cotainar h6{
+    border-radius: 5px;
+    display: flex; 
+    margin:0 0 6px 0;
+}
+.Popular-prodact-cotainar h6 >p{
+    margin: 0;
+}
+.Popular-prodact-cotainar h6 >p{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}
+.Popular-prodact-cotainar >div >p{
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* media cwary mobail phone */
+@media screen and (max-width:360px){
+    header{
+        margin: 20px;
+    }
+    .nav{
+         flex-direction:column;
+    }
+    
+    .banner{
+        display:flex;
+        flex-direction:column-reverse;
+
+    }
+}
