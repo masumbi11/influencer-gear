@@ -1,0 +1,72 @@
+/* seard styls */
+:root{
+    --black:#3A3A3A;
+    --btn:#fff;
+}
+body{
+    font-family: "Work Sans";
+    font-optical-sizing: auto;
+}
+.font-famely-Inter{
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+}
+/* nav bar styles */
+header{
+    margin: 20px 120px 0 120px;
+}
+.nav-h3{
+    color: var(black);
+    font-size: 24px;
+    font-weight: 600;
+}
+.nav-bar ul{
+    list-style: none;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar li{
+    color: var(--black);
+    font-weight: 600;
+    padding-left: 24px;
+
+}
+/* header banner styles*/
+.banner-content h3{
+    margin-top: 145px;
+    color: var(--black);
+    font-size: 52px;
+    font-weight: 700;
+}
+.banner-content p{
+    color: var(--black);
+    font-weight: 600;
+}
+.banner-content button{
+    color: var(--btn);
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    
+}
+.banner-img{
+    margin-top: 71px;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.logos{
+    
+    display: flex;
+    justify-content: space-around;
+}
+     
