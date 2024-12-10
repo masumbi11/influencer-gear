@@ -50,26 +50,35 @@ header{
     color: var(--btn);
     border-radius: 41px;
     background: #E02C6D;
-    padding: 10px 24px;
-    
+    padding: 10px 24px;  
+}
+.camera{
+    position: absolute;
+    z-index: 1;
+}
+.Circle{
+    position: relative;
 }
 .banner-img{
     margin-top: 71px;
-    background-image: url('../images/Circle\ design.svg');
-    background-repeat: no-repeat;
 }
 .banner{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 69px;
+}
+.logos,.logos-1,.logos-2 {
+    display: flex;
 }
 .logos{
-    
-    display: flex;
-    justify-content: space-around;
+    margin-left:32px;
+}
+.logos img{
+    margin-right: 32px;
 }
      /*Popular Collection styles  */
 .Popular-Collection{
-    margin: 20px 120px;
+    margin:0 140px;
 }
 .Popular-Collection-hedline{
     color: var(--black);
@@ -82,7 +91,11 @@ header{
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
+.Popular-prodact-cotainar >div{
+    margin: auto;
+}
 .Popular-prodact-cotainar{
+    align-items: center;
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -121,19 +134,79 @@ header{
     font-style: normal;
     font-weight: 700;
 }
-
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    margin-left: 870px;
+}
 /* media cwary mobail phone */
 @media screen and (max-width:360px){
     header{
-        margin: 20px;
+        margin: 5px;
+        text-align: center;
     }
-    .nav{
+    .banner-content h3{
+        font-size: 28px;
+        align-items: center;
+    }
+    .nav,
+    .banner,
+    .logos,
+    .nav-bar ul{
          flex-direction:column;
     }
+    .banner-img img{
+        width: 350px;
+        height: 350px;
+    }
+    .logos-1{
+        margin-right:32px;
+    }
+    .logos-2{
+        margin-left: 32px;
+    }
+    .logos-img1{
+        width: 33.381px;
+        height: 18.838px;
+    }
+    .logos-img2{
+        width: 50.936px;
+        height: 15.332px;
+    }
+    .logos-img3{
+        width: 51.167px;
+        height: 15.241px;
+    }
+    .logos-img4{
+        width: 44.41px;
+        height: 17.747px;
+    }
+    .logos-img5{
+        width: 58.856px;
+        height: 16.979px;
+    }
+    .logos-img6{
+        width: 67.309px;
+        height: 15.766px;
+    }
+    .logos-img7{
+        width: 44.635px;
+        height: 18.507px;
+    }
+    .Popular-prodact{
+        display: block;
+        margin-left:10px;
+    }
     
-    .banner{
-        display:flex;
-        flex-direction:column-reverse;
-
+    .Popular-Collection{
+        align-items: center;
+        margin: 0 5px;
+    }
+    .Popular-prodact-cotainar{
+        align-items: center;
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     }
 }
+
