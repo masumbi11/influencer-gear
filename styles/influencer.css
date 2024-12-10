@@ -139,6 +139,57 @@ header{
     font-weight: 700;
     margin-left: 870px;
 }
+/* Featured-products-containar styles */
+.Featured-products-containar{
+    display: flex;
+    justify-content:space-between;
+    margin: 50px 50px;
+}
+.Featured-products-content h2{
+    font-weight: 700;
+    font-size: 38px;
+    color: #0A0826;
+    margin: 0;
+}
+.Featured-products-content >p{
+    font-weight: 700;
+    color: #6C6C6C;
+    width: 501px;
+    margin-top:10px;
+}
+.Join-Now{
+    font-weight: 700;
+    color: #E02C6D;  
+}
+.Join-Now p{
+    margin: 0;
+}
+/* footer-containar styles */
+.footer-containar{
+    background-color: var(--Dark-Color);
+    align-items: center;
+    text-align: center;
+}
+.footer-content{
+    color: var(--btn);
+    padding-top: 30px;
+}
+.footer-content >h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin:0px;
+}
+.footer-content h5{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+.footer-content p{
+    margin: 0;
+}
+.footer-containar img{
+    margin-bottom: 30px;
+}
 /* media cwary mobail phone */
 @media screen and (max-width:360px){
     header{
@@ -208,5 +259,28 @@ header{
         background: #FFF;
         box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     }
+    .see-more{
+        margin-left: 240px;
+    }
+    .Featured-products-containar{
+        /* align-items: center; */
+        flex-direction:column-reverse ;
+        margin: 5px;
+    }
+    .Featured-products-content{
+        text-align: center;    
+    }
+    .Featured-products-img img{
+        width: 299px;
+        height: 188px;
+        margin-left:20px ;
+    }
+    .Featured-products-content p{
+        width: 329px;
+    }
+    .Featured-products-content h2{
+        font-size: 24px;
+    }
+
 }
 
