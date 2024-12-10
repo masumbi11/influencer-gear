@@ -71,10 +71,10 @@ header{
     display: flex;
 }
 .logos{
-    margin-left:32px;
+    margin-left:50px;
 }
 .logos img{
-    margin-right: 32px;
+    margin-right:50px;
 }
      /*Popular Collection styles  */
 .Popular-Collection{
